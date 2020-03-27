@@ -5,7 +5,7 @@ import time
 voresDrone = Drone.Drone("192.168.10.1", 8889)
 
 isConnected = voresDrone.connect()
-if (isConnected != 'Did not work'):
+if (isConnected == 'Succes'):
     time.sleep(2)
 
     voresDrone.takeOff()
